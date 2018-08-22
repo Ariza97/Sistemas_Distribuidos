@@ -4,9 +4,7 @@
 class Fecha
 {
   private:
-    int dia;
-    int mes;
-    int anio;
+    int numero_1;
 
   public:
     /*
@@ -18,8 +16,10 @@ class Fecha
     bool leapyr(int);
 
     */
-    Fecha ();
-    int referencia(int*, int*);
+    Fecha (int numero);
+    int referencia(Fecha*, Fecha*);
+    int parametros(Fecha, Fecha);
+    int referenciaCPP(Fecha&, Fecha&);
 };
 
 #endif

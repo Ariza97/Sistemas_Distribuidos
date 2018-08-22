@@ -7,6 +7,7 @@ class Fecha
     int dia;
     int mes;
     int anio;
+    int var1[10000];
 
   public:
     /*
@@ -18,9 +19,10 @@ class Fecha
     bool leapyr(int);
 
     */
-    Fecha ();
-    int parametros(int, int);
-    int referencia(int&, int&);
+    Fecha (int dd, int mm, int anio);
+    int parametros(Fecha, Fecha);
+    int referencia(Fecha&, Fecha&);
+    int convierte(Fecha);
 };
 
 #endif

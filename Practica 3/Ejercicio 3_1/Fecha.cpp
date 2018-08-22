@@ -3,18 +3,36 @@
 using namespace std;
 
 
-Fecha::Fecha( )
+Fecha::Fecha(int numero)
 {
-
+	numero_1 =numero;
 }
 
-int Fecha::referencia(int *fecha1, int *fecha2){
-	if(fecha1 > fecha2)
+int Fecha::referencia(Fecha *fecha1, Fecha *fecha2){
+	if(fecha1->numero_1 > fecha2->numero_1)
 		return 0;
-	else if(fecha1 == fecha2)
+	else if(fecha1->numero_1 == fecha2->numero_1)
 		return 1;
 	else
-		return -11;
+		return -1;
+}
+
+int Fecha::parametros(Fecha fecha1, Fecha fecha2){
+	if(fecha1.numero_1 > fecha2.numero_1)
+		return 0;
+	else if(fecha1.numero_1 == fecha2.numero_1)
+		return 1;
+	else
+		return -1;
+}
+
+int Fecha::referenciaCPP(Fecha &fecha1, Fecha &fecha2){
+	if(fecha1.numero_1 > fecha2.numero_1)
+		return 0;
+	else if(fecha1.numero_1 == fecha2.numero_1)
+		return 1;
+	else
+		return -1;
 }
 
 

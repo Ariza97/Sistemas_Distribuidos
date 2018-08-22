@@ -3,29 +3,42 @@
 using namespace std;
 
 
-Fecha::Fecha( )
-{
+Fecha::Fecha (int dd, int mm, int anio){
+    dia =dd;
+    mes =mm;
+    anio =anio;
+}
+
+int Fecha::parametros(Fecha fecha1, Fecha fecha2){
+
+	int dato1 =fecha1.convierte(fecha1);
+	int dato2 =fecha2.convierte(fecha2);
+
+	if(dato1 > dato2)
+		return 0;
+	else if(dato1 == dato2)
+		return 1;
+	else
+		return -1;
 
 }
 
-int Fecha::parametros(int fecha1, int fecha2){
-	if(fecha1 > fecha2)
+int Fecha::referencia(Fecha &fecha1, Fecha &fecha2){
+
+	int dato1 =fecha1.convierte(fecha1);
+	int dato2 =fecha2.convierte(fecha2);
+
+	if(dato1 > dato2)
 		return 0;
-	else if(fecha1 == fecha2)
+	else if(dato1 == dato2)
 		return 1;
 	else
 		return -1;
 }
 
-int Fecha::referencia(int &fecha1, int &fecha2){
-	if(fecha1 > fecha2)
-		return 0;
-	else if(fecha1 == fecha2)
-		return 1;
-	else
-		return 1;
-}
-
+ int Fecha::convierte(Fecha fecha){
+ 	return fecha.anio*10000+fecha.mes*100+fecha.dia;
+ }
 
 /*
 void Fecha::inicializaFecha(int dd, int mm, int aaaa)
