@@ -11,25 +11,18 @@ using namespace std;
 int main( )
 {
 
-	vector<PoligonoIrreg> poligonos(10);
-
+	vector<PoligonoIrreg> poligonos(10000);
 	for (int i = 0; i < poligonos.size(); i++)
 	{
 
 		for (int j = 0; j < rand(); j++)
 		{
-			poligonos[i].anadeVerticeRecerve(Coordenada(1,1));
+			poligonos[i].anadeVertice(Coordenada(1,1));
 		}
 		
 	}
 
-	//PoligonoIrreg poligonoIrreg;
-
-	//poligonoIrreg.anadeVerticeRecerve (Coordenada(1,1));
-
-	/*printf("Numero de vertices : %d\n", poligono.getContadorVertices());
-	poligono.ordenaA();*/
-
+		printf("Numero de vertices : %d\n", poligonos[0].getContadorVertices());
 /*	PoligonoIrreg poligonoIrreg;
 
 
