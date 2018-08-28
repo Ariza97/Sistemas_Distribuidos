@@ -13,7 +13,15 @@ int main( )
 
 	vector<PoligonoIrreg> poligonos(10);
 
-	for (int i = 0; i < poligonos.size(); i++)
+	PoligonoIrreg poligono;
+
+	poligono.anadeVertice(Coordenada(2,1));
+	poligono.anadeVertice(Coordenada(3,1));
+	poligono.anadeVertice(Coordenada(5,1));
+	poligono.anadeVertice(Coordenada(1,1));
+	poligono.anadeVertice(Coordenada(4,1));
+
+	/*for (int i = 0; i < poligonos.size(); i++)
 	{
 
 		for (int j = 0; j < rand(); j++)
@@ -21,14 +29,14 @@ int main( )
 			poligonos[i].anadeVerticeRecerve(Coordenada(1,1));
 		}
 		
-	}
+	}*/
 
 	//PoligonoIrreg poligonoIrreg;
 
 	//poligonoIrreg.anadeVerticeRecerve (Coordenada(1,1));
 
-	/*printf("Numero de vertices : %d\n", poligono.getContadorVertices());
-	poligono.ordenaA();*/
+	printf("Numero de vertices : %d\n", poligono.getContadorVertices());
+	poligono.ordenaA();
 
 /*	PoligonoIrreg poligonoIrreg;
 
