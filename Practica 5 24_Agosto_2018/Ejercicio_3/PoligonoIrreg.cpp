@@ -13,8 +13,8 @@ void PoligonoIrreg::anadeVertice(Coordenada coordenada){
 
 void PoligonoIrreg::anadeVerticeRecerve(Coordenada coordenada){
 	v.reserve(v.size()+1);
-	v[v.size()-1] =coordenada;
-
+	v[v.size()] =coordenada;
+	//v.push_back(coordenada);
 	contadorvertices++;
 }
 
@@ -32,7 +32,7 @@ void PoligonoIrreg::imprimeVertices(){
 int PoligonoIrreg::contadorvertices=0;
 
 int PoligonoIrreg::getContadorVertices(){
-	cout<< "Valor de la static: "<<contadorvertices<<endl;
+	//cout<< "Valor de la static: "<<contadorvertices<<endl;
 	return contadorvertices;
 }
 
