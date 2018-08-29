@@ -31,6 +31,8 @@ int main( )
 		poligonoIrreg.imprimeVertices();
 	}
 
+	poligonoIrreg.ordenaA();
+
 
 
 //cout<<drand48() * (200.99-100.99) + 1.11<<endl;

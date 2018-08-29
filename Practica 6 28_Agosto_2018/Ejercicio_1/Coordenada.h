@@ -6,11 +6,14 @@ class Coordenada
 	private:
 		double x;
 		double y;
+		double mag;
 
 	public:
 		Coordenada(double = 0, double = 0);
 		double obtenerX();
 		double obtenerY();
+		void setMagnitud(double);
+		double obtenerMagnitud();
 };
  
 

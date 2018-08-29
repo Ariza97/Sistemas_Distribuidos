@@ -13,3 +13,15 @@ double Coordenada::obtenerY()
 {
 	return y;
 }
+
+void Coordenada::setMagnitud(double Magnitud){
+
+	mag = Magnitud;
+
+}
+
+double Coordenada::obtenerMagnitud(){
+
+	return mag;
+
+}
