@@ -28,7 +28,7 @@ int main( )
 			dato2 = dato2 + decimales;
 			
 		poligonoIrreg.anadeVertice(Coordenada(dato1,dato2));		
-		poligonoIrreg.imprimeVertices();
+		
 	}
 
 	poligonoIrreg.ordenaA();
