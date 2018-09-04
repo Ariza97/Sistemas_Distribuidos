@@ -1,10 +1,11 @@
 import java.util.Random;
 
+
 public class HolaMundo {
     public static void main(String[] args){
         String cadenota ="";
         String cRand;
-        int n =100000;
+        int n =(int)Math.pow(26,3);
         int caracter;
         Random rnd = new Random();
 

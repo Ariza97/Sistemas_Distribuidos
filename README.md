@@ -20,7 +20,7 @@ Completo.
 Completo.
 
 ### Practica 07 *29/Agosto/2018*
-En el ejercicio 3, ya funciona la version Java y C++ pero la version en C aun tiene problemas.
+Completo.
 
-### Practica 08 *31/Agosto/2018*
-Erick...
+### Practica 08 *04/Septiembre/2018*
+
