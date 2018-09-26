@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <vector>
 #include <string>
-#include <string.h>
+#include <cstring>
 
 using namespace std;
 
@@ -16,12 +16,12 @@ int main(){
 	cout << cadena.at(4) << endl;*/
 
 
-	char aCString[] = "hola";
+	char aCString[50];
 	string stringVariable("hdskj");
 
 	strcpy(aCString, stringVariable.c_str( )); 
 
-	cout << "Esta es la variable" << stringVariable << endl ;
+	cout << "Esta es la variable :" << aCString << endl ;
 
 	return 1;
 }
