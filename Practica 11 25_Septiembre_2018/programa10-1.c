@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
    msg_to_server_addr.sin_addr.s_addr = inet_addr(argv[1]);
    msg_to_server_addr.sin_port = htons(puerto);
    
-   memcpy(aux, &msg_to_server_addr.sin_addr.s_addr, 4);
+   /*memcpy(aux, &msg_to_server_addr.sin_addr.s_addr, 4);
    printf("En Hexadecimal: %x %x %x %x\n",aux[0],aux[1],aux[2],aux[3]);
-   printf("En Decimal: %d %d %d %d\n",aux[0],aux[1],aux[2],aux[3]);
+   printf("En Decimal: %d %d %d %d\n",aux[0],aux[1],aux[2],aux[3]);*/
    //printf("Mi puerto: %d\n", msg_to_server_addr.sin_port);
    
 
