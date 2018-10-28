@@ -8,19 +8,27 @@ int main()
     SocketDatagrama socket(7200);
     unsigned int *num;
     int aux = 0;
+    int contador = 0;
     while (1) {
         //número a evaluar(num[0]), inicion(num[1]), final(num[2])
         PaqueteDatagrama paq(sizeof(num)*3);
         socket.recibe(paq);
         num = (unsigned int *)paq.obtieneDatos();
-        int res;
+        int res = 1;
         //cout << num[0] <<"+" << num[1] << "=" << res << endl;
-        for(int i = num[1]; i < num[2] + 1; i++){
-            if(num[0] % i == 0){
-                aux++;
+        
+        for(contador=num[1]; contador<num[2]; contador++){
+                if((num[0]%contador) == 0){
+                    res =0; 
+
+                    break;
+                }
             }
-        }
-        if(aux != 2){
+    
+
+
+
+        if(res == 0){
             cout << "El numero: " << num[0] << " evaluado en el intervalo: " << num[1] << " a " << num[2] << " no es primo" << endl;
             res = 0;
         }
@@ -36,3 +44,4 @@ int main()
 
 //1 = primo
 //0 = no primo
+
