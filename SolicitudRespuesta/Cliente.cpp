@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, char*argv[]) {
 
-	char arreglo[100] = "Cadena que se va a invertir y se mostrara en el servidor \0";
+	char arreglo[100] = "Cadena que se va a \0";
 	char *ip;
 	int puerto;
 	int operacion = 1;

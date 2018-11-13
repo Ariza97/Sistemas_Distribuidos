@@ -45,7 +45,7 @@ int main() {
 		//msj = respuesta.getRequest();
 		memcpy(&msj, respuesta.getRequest(), sizeof(struct mensaje));
 
-    cout << "Estos son loa argumentos antes de laoperacion: " << msj.arguments << endl;
+    cout << "Estos son loa argumentos antes de la operacion: " << msj.arguments << endl;
 		cout << "id: " << msj.operationId << endl;
 		switch(msj.operationId) {
 			case 1:
